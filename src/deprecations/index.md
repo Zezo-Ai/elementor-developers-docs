@@ -8,7 +8,7 @@ Elementor is an evolving product. Over time, code is removed or replaced. These 
 
 The reason for this gradual process is to avoid regression errors caused by external addon developers still using deprecated code. 
 
-As a first step, developers are informed of the code change through several channels, including the [developers blog](https://developers.elementor.com/category/deprecations/), major versions' release notes, and debug tools.
+Developers are informed of the code change in the [developers blog](https://developers.elementor.com/blog/) and an updated list can be found on the [recent deprecations](https://developers.elementor.com/recent-deprecations/) page.
 
 Elementor's deprecation process consists of the following steps:
 
