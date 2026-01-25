@@ -31,7 +31,7 @@ a.sidebar-link.active
   background-color #fdf6f8
 
 .sidebar p:has( span:empty )
-  padding: 0
+  padding 0
 
 .theme-default-content
   code
@@ -43,11 +43,18 @@ a.sidebar-link.active
 
 // Header
 
-#app .navbar .logo
-  margin-right 5px
+#app
+  .navbar
+    .logo
+      height 1.5rem
+      width 1.5rem
+      min-width unset
+      margin-right 5px
+      vertical-align middle
 
-#app .site-name 
-  font-family "Roobert"
+    .site-name
+      font-family Roobert
+      font-size 1.3rem
 
 // Navigation
 
