@@ -50,6 +50,7 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/import/stage_1/result`
 * `elementor/kit/export/manifest-data`
 * `elementor/kit/import-export/directory/{$path}`
+* [elementor/kit/meta_to_preserve_on_kit_import](./kit-meta-to-preserve-on-import/)
 * `elementor/maintenance_mode/is_login_page`
 * [elementor/mask_shapes/additional_shapes](./masks.md)
 * [elementor/shapes/additional_shapes](./shapes.md)
@@ -87,6 +88,8 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/admin/dashboard_overview_widget/after_version`
 * `elementor/ajax/register_actions`
 * `elementor/app/init`
+* [elementor/atomic-widgets/styles/clear](./atomic-widgets-styles-clear/)
+* [elementor/atomic-widgets/styles/register](./atomic-widgets-styles-register/)
 * `elementor/common/after_register_scripts`
 * `elementor/connect/apps/register`
 * [elementor/controls/register](./../managers/registering-controls/)
@@ -143,6 +146,7 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/frontend/before_get_builder_content`
 * `elementor/frontend/get_builder_content`
 * `elementor/frontend/render_mode/register`
+* [elementor/global_classes/update](./atomic-global-classes-update/)
 * [elementor/init](./elementor-init/)
 * `elementor/kit/register_tabs`
 * [elementor/loaded](./elementor-loaded/)

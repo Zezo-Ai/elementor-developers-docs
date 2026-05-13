@@ -37,4 +37,16 @@ module.exports = [
       'global-styles',
     ]
   },
+  {
+    title: 'Atomic Structure',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
+      'atomic-elements',
+      'atomic-widgets',
+      'atomic-prop-values',
+      'atomic-styles',
+      'atomic-global-classes',
+    ]
+  },
 ];

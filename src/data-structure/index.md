@@ -47,3 +47,10 @@ Special cases:
 * [Responsive Data](./responsive-data/)
 * [Repeaters](./repeaters/)
 * [Global Styles](./global-styles/)
+
+Atomic Structure
+* [Atomic Elements](./atomic-elements/)
+* [Atomic Widgets](./atomic-widgets/)
+* [Atomic Prop Values](./atomic-prop-values/)
+* [Atomic Styles](./atomic-styles/)
+* [Atomic Global Classes](./atomic-global-classes/)
