@@ -48,7 +48,8 @@ Special cases:
 * [Repeaters](./repeaters/)
 * [Global Styles](./global-styles/)
 
-Atomic Structure
+For information about atomic elements:
+
 * [Atomic Elements](./atomic-elements/)
 * [Atomic Widgets](./atomic-widgets/)
 * [Atomic Prop Values](./atomic-prop-values/)
