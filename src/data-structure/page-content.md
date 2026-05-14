@@ -42,13 +42,13 @@ If the page has content, the `content` contains a list of objects:
 
 Elements are simple objects containing element data. Some elements can have nested elements inside of them, others don't.
 
-This is important as in the past Elementor had a strict data structure - the traditional structure. The page had "section" elements, sections had nested "column" elements, and the columns had "widget" elements.
+This is important as in the past Elementor had a strict data structure - the legacy structure. The page had "section" elements, sections had nested "column" elements, and the columns had "widget" elements.
 
-With the introduction of containers, Elementor replaced the traditional data structure with a modern structure, allowing the user to nest multiple elements one inside the other.
+With the introduction of containers, Elementor replaced the legacy data structure with a modern structure, allowing the user to nest multiple elements one inside the other.
 
-Traditional structure:
+Legacy structure:
 
-<img :src="$withBase('/assets/img/data-structure-traditional.png')" alt="Traditional structure">
+<img :src="$withBase('/assets/img/data-structure-traditional.png')" alt="Legacy structure">
 
 Modern structure:
 
@@ -60,7 +60,7 @@ With the adoption of nested layout elements, Elementor introduced widgets with n
 
 ### A Page with a Section and a Column
 
-An example of a page that uses the traditional section-column-widget structure:
+An example of a page that uses the legacy section-column-widget structure:
 
 ```json
 {
