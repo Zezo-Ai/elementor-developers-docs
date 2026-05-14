@@ -5,7 +5,7 @@
 Elementor offers many built-in widgets out of the box, but it also allows external developers to register new widgets.
 
 ## Hooks
-
+ 
 To do that we simply hook to the `elementor/widgets/register` action which provides access to the widgets manager as a parameter. Developers can use the manager to add new widgets using the `register()` method with the widget instance.
 
 ## Registering Widgets
