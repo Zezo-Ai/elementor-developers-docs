@@ -26,7 +26,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 * **Style Dependencies** – The `get_style_depends()` method lets you define the CSS files required to run the widget.
 
-Please note that these dependencies should already be registered. The widget class only informs Elementor what dependencies it needs to enqueue.
+Both methods must return an array of **registered** script/style handles. The widget class does not register anything itself — it only tells Elementor which already-registered assets to enqueue when the widget is rendered. Returning an unregistered handle has no effect.
 
 ## Registering Scripts & Styles in WordPress
 
@@ -143,3 +143,27 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 ```
 
 This can be handy when 3rd party widgets register their own frontend handlers. Read more about it on [controls `frontend_available` argument](./../editor-controls/frontend-available/).
+
+### Editor-Only Dependencies
+
+`get_script_depends()` and `get_style_depends()` are enqueued whenever the widget renders — including inside the editor preview iframe. They are not the right place for scripts that should only load in the editor panel itself (outside the preview).
+
+For assets needed only inside the editor panel, register and enqueue them via the `elementor/editor/before_enqueue_scripts` or `elementor/editor/after_enqueue_scripts` action hooks instead:
+
+```php
+function my_plugin_register_editor_only_assets() {
+	wp_register_script(
+		'my-widget-editor-script',
+		plugins_url( 'assets/js/my-widget-editor.js', __FILE__ ),
+		[ 'elementor-editor' ]
+	);
+}
+add_action( 'wp_enqueue_scripts', 'my_plugin_register_editor_only_assets' );
+
+function my_plugin_enqueue_editor_only_assets() {
+	wp_enqueue_script( 'my-widget-editor-script' );
+}
+add_action( 'elementor/editor/before_enqueue_scripts', 'my_plugin_enqueue_editor_only_assets' );
+```
+
+This asset loads in the editor panel but is never enqueued on the frontend or inside the preview iframe. See [Editor Scripts](./../scripts-styles/editor-scripts/) for more details.

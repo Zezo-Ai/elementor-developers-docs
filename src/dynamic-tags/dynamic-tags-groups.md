@@ -8,17 +8,29 @@ To simplify navigation, all tags are arranged into groups. This allows users to 
 
 ## Available Groups
 
-Elementor Pro adds the following groups:
+Elementor core registers one built-in group:
 
-* **Post** - Post related dynamic data.
-* **Archive** - Theme archive related dynamic data.
-* **Site** - Site related dynamic data.
-* **Media** - Dynamic data based on media files.
-* **Actions** - Custom dynamic data.
-* **Author** - Post author dynamic data.
-* **Comments** - Post comments dynamic data.
+| Slug | Label |
+|------|-------|
+| `base` | Base Tags |
+
+Elementor Pro registers additional groups:
+
+| Slug | Label |
+|------|-------|
+| `post` | Post |
+| `archive` | Archive |
+| `site` | Site |
+| `media` | Media |
+| `action` | Actions |
+| `author` | Author |
+| `comments` | Comments |
 
 If you would like to use the groups added by Elementor Pro, your addons must [make sure Elementor Pro was loaded](./../addons/compatibility/).
+
+::: tip Groups vs. Categories
+Groups control where a tag appears in the **dynamic tags panel list** (the visual grouping users see). Categories are a separate concept: they control which **controls** a tag can appear on (for example, `text`, `url`, `image`, `color`). A tag declares its categories in `get_categories()` and its display group in `get_group()`.
+:::
 
 ## Applying Groups
 
@@ -36,7 +48,7 @@ class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 ## Creating New Groups
 
-Elementor Pro’s dynamic tags manager lets external developers create custom groups using the `elementor/dynamic_tags/register_tags` action hook:
+External developers can create custom groups using the `elementor/dynamic_tags/register` action hook, which passes the dynamic tags manager as a parameter:
 
 ```php
 /**
