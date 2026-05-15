@@ -25,15 +25,8 @@ module.exports = [
       'general-elements',
       'container-element',
       'widget-element',
-    ]
-  },
-  {
-    title: 'Special Cases',
-    collapsable: false,
-    sidebarDepth: -1,
-    children: [
-      'responsive-data',
       'repeaters',
+      'responsive-data',
       'global-styles',
     ]
   },

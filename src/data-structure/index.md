@@ -36,16 +36,13 @@ To understand how the JSON file is structured, read the following:
 * [Page Settings](./page-settings/)
 * [Page Content](./page-content/)
 
-For information about different element types:
+For information about element types:
 
 * [General Elements](./general-elements/)
 * [Container Element](./container-element/)
 * [Widget Element](./widget-element/)
-
-Special cases:
-
-* [Responsive Data](./responsive-data/)
 * [Repeaters](./repeaters/)
+* [Responsive Data](./responsive-data/)
 * [Global Styles](./global-styles/)
 
 For information about atomic elements:
