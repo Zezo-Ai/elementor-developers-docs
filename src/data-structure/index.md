@@ -45,10 +45,10 @@ For information about element types:
 * [Responsive Data](./responsive-data/)
 * [Global Styles](./global-styles/)
 
-For information about atomic elements:
+<!-- For information about atomic elements:
 
 * [Atomic Elements](./atomic-elements/)
 * [Atomic Widgets](./atomic-widgets/)
 * [Atomic Prop Values](./atomic-prop-values/)
 * [Atomic Styles](./atomic-styles/)
-* [Atomic Global Classes](./atomic-global-classes/)
+* [Atomic Global Classes](./atomic-global-classes/) -->

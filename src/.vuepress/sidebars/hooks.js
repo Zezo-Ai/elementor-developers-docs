@@ -31,10 +31,10 @@ module.exports = [
       'font-display',
       'form-validation',
       'forms',
-      'kit-meta-to-preserve-on-import',
-      'atomic-global-classes-update',
-      'atomic-widgets-styles-register',
-      'atomic-widgets-styles-clear',
+      // 'kit-meta-to-preserve-on-import',
+      // 'atomic-global-classes-update',
+      // 'atomic-widgets-styles-register',
+      // 'atomic-widgets-styles-clear',
     ]
   },
   {
